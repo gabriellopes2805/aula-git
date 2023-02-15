@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: "Julius Sans One";
+    color: #112D4E;
 }
 
 ul {
@@ -28,7 +29,7 @@ strong#collored {
   transform: rotate(-20deg);
   z-index: 1;
   font-family: "Dancing Script";
-  color: #579BB1;
+  color: #3F72AF;
 }
 span#normal {
   z-index: -1;
@@ -41,8 +42,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #F8F4EA;
-    border-bottom: solid #579BB1 1px;
+    background-color: #F9F7F7;
+    border-bottom: solid #3F72AF 1px;
 }
 #navList {
   display: inline-flex;
@@ -63,7 +64,7 @@ header {
   user-select: none;
   cursor: pointer;
   transition: .2s;
-  background-image: linear-gradient(to right, #579BB1, #579BB1, #579BB1, black, black);
+  background-image: linear-gradient(to right, #3F72AF, #3F72AF, #3F72AF, black, black);
   background-clip: text;
   background-size: 150%;
   color: transparent;
