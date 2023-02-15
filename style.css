@@ -1,0 +1,80 @@
+/* configurações gerais */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Julius+Sans+One&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Julius Sans One";
+}
+
+ul {
+  list-style: none;
+}
+/* configurações gerais */
+
+/* titulo */
+p#titulo {
+  position: relative;
+  font-size: 15px;
+  margin: 1em;
+  width: fit-content;
+  height: fit-content;
+  user-select: none;
+}
+strong#collored {
+  position: absolute;
+  top: -.7em;
+  left: -.7em;
+  transform: rotate(-20deg);
+  z-index: 1;
+  font-family: "Dancing Script";
+  color: #579BB1;
+}
+span#normal {
+  z-index: -1;
+}
+/* titulo */
+
+/* cabeçalho */
+header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8F4EA;
+    border-bottom: solid #579BB1 1px;
+}
+#navList {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 14px;
+}
+#sair {
+  margin: 1em;
+  user-select: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+/* cabeçalho */
+
+/* animações da navigation bar */
+.listItem:hover {
+  user-select: none;
+  cursor: pointer;
+  transition: .2s;
+  background-image: linear-gradient(to right, #579BB1, #579BB1, #579BB1, black, black);
+  background-clip: text;
+  background-size: 150%;
+  color: transparent;
+  animation: textGradient 2s alternate 0s infinite ease-in-out forwards;
+}
+@keyframes textGradient {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 100%;
+  }
+}
+/* animações da navigation bar */
